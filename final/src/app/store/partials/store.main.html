@@ -1,0 +1,24 @@
+<h1>Welcome to the Store page</h1>
+
+<ul>
+	<li><a ui-sref="{{ctrl.navStates.kShoesState}}">Shoes</a></li>
+	<li><a ui-sref="{{ctrl.navStates.kPantsState}}">Pants</a></li>
+	<li><a ui-sref="{{ctrl.navStates.kShirtsState}}">Shirts</a></li>
+	<li><a ui-sref="{{ctrl.navStates.kRestaurantsState}}">Shirts</a></li>
+
+</ul>
+
+<!-- a button that goes to details page -->
+</br></br>
+<div>
+	<label>Location: </label><input type="text" ng-model="ctrl.location"></input>
+    <button  ui-sref="{{ctrl.navStates.kStoreState}}" class="btn btn-primary" ng-click="ctrl.onAddressChange(ctrl.location)">Get Food</button>
+</div>
+</br></br></br>
+<div ui-view="listView"
+	 style="width:30%; height: 300px; float:left; background-color: yellow;">
+</div>
+<div ui-view="detailView"
+	 style="width:70%; height: 300px; float:left; background-color: pink;">
+</div>
+
