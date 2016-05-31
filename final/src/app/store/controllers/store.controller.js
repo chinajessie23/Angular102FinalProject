@@ -13,7 +13,7 @@ angular.module('MyApp.Store')
                 self.restaurants = restaurants;
                 console.log(self.restaurants);
                 self.showList=true;
-                // self.showDetail=true;
+                self.showDetail=true;
 
 
             }
