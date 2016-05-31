@@ -19,8 +19,8 @@
     	// Store child states
         kRestaurantsState:'store.restaurants',
     	kShoesState: 'store.shoes',
-    	kPantsState: 'store.pants',
-    	kShirtsState: 'store.shirts'
+        kRestaurantDetailState:'store.restaurants.restaurant'
+
     });
 
 })();

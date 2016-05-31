@@ -63,9 +63,13 @@
           templateUrl: 'app/store/partials/shoesDetails.html',
         }
       }
+    })
+
+    //Restaurant child-state
+    .state(STATES.kRestaurantDetailState, {
+      url:'/restaurant',
+      templateUrl: 'app/store/partials/restaurantsDetails.html',
     });
-
-
 
     $urlRouterProvider.otherwise('/');
   }
