@@ -2,8 +2,8 @@
 (function() {
 
 	var cachedUser = {
-		fname: 'George',
-		lname: 'Dagher'
+		fname: 'Jiasi',
+		lname: 'Chen'
 	};
 
 	angular.module('MyApp.Home')

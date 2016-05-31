@@ -8,7 +8,7 @@
 	    'ui.router',
 	    'ui.bootstrap',
 	    'MyApp.Home',
-	    'MyApp.Contacts',
+	    'MyApp.Likes',
 	    'MyApp.Store',
 	    'MyApp.Common'
 	]);

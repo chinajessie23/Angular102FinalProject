@@ -3,7 +3,8 @@ angular.module('MyApp.Store')
 .controller('StoreController', function(STATES,MainDataService) {
 	var self = this;
 	self.navStates = STATES;
-    self.showListsAndDetails=false;
+    self.showList=false;
+    self.showDetail=false;
 	console.log('StoreController initialized');
 
    self.onAddressChange = function(userAddress) {
@@ -11,7 +12,9 @@ angular.module('MyApp.Store')
             if (isValid) {
                 self.restaurants = restaurants;
                 console.log(self.restaurants);
-                self.showListsAndDetails=true;
+                self.showList=true;
+                // self.showDetail=true;
+
 
             }
         });

@@ -16,10 +16,10 @@
       controller: 'HomeController as ctrl'
       // controllerAs: 'ctrl'
     })
-    .state(STATES.kContactsState, {
-      url: '/contacts',
-      templateUrl: 'app/contacts/partials/contacts.main.html',
-      controller: 'ContactsController as ctrl'
+    .state(STATES.kLikesState, {
+      url: '/likes',
+      templateUrl: 'app/likes/partials/likes.main.html',
+      controller: 'LikesController as ctrl'
     })
     .state(STATES.kStoreState, {
       url: '/store',
@@ -29,18 +29,18 @@
     })
 
 
-    //Contacts child-states
-    .state(STATES.kCEOState /*contacts.ceo*/, {
+    //Likes child-states
+    .state(STATES.kCEOState /*likes.ceo*/, {
       url:'/ceo',
-      templateUrl: 'app/contacts/partials/ceo.html',
+      templateUrl: 'app/likes/partials/ceo.html',
     })
     .state(STATES.kPresidentState, {
       url:'/president',
-      templateUrl: 'app/contacts/partials/president.html',
+      templateUrl: 'app/likes/partials/president.html',
     })
     .state(STATES.kFounderState, {
       url:'/founder',
-      templateUrl: 'app/contacts/partials/founder.html',
+      templateUrl: 'app/likes/partials/founder.html',
     })
 
     // Store child-sibling states

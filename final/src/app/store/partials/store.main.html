@@ -5,7 +5,7 @@
 </br>
 <div>
 	<label>Location: </label><input type="text" ng-model="ctrl.location"></input>
-    <button  ui-sref="{{ctrl.navStates.kStoreState}}" class="btn btn-primary" ng-click="ctrl.onAddressChange(ctrl.location)">Get!</button>
+    <button ui-sref="{{ctrl.navStates.kStoreState}}" class="btn btn-primary" ng-click="ctrl.onAddressChange(ctrl.location)">Get!</button>
 </div>
 
 </br>
@@ -15,10 +15,10 @@
 </ul>
 
 </br>
-<div ui-view="listView"
+<div ng-show = "ctrl.showList" ui-view="listView"
 	 style="width:20%; height: 500px; float:left; background-color: yellow;">
 </div>
-<div ui-view="detailView"
+<div ng-show = "ctrl.showDetail" ui-view="detailView"
 	 style="width:80%; height: 500px; float:left; background-color: pink;">
 </div>
 

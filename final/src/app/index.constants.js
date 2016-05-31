@@ -8,13 +8,13 @@
 
     .constant('STATES', {
     	kHomeState: 'home',
-    	kContactsState: 'contacts',
+    	kLikesState: 'likes',
     	kStoreState: 'store',
 
     	// Contacts child states
-    	kCEOState: 'contacts.ceo',
-    	kPresidentState: 'contacts.president',
-    	kFounderState: 'contacts.founder',
+    	kCEOState: 'likes.ceo',
+    	kPresidentState: 'likes.president',
+    	kFounderState: 'likes.founder',
 
     	// Store child states
         kRestaurantsState:'store.restaurants',

@@ -1,0 +1,1 @@
+angular.module('MyApp.Likes', ['MyApp.Common']);
