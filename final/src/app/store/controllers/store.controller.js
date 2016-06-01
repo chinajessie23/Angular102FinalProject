@@ -12,13 +12,18 @@ angular.module('MyApp.Store')
             if (isValid) {
                 self.restaurants = restaurants;
                 console.log(self.restaurants);
-                self.showList=true;
-                self.showDetail=true;
-
-
             }
         });
     };
+
+    self.showDetails = function(){
+          self.showList=true;
+    }
+
+    self.showDetailTrue = function(){
+        self.showDetail=true;
+        console.log("went in detailTrue")
+    }
 
     self.onRestaurantClick= function(rest){
         self.rest = rest;

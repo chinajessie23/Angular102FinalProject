@@ -1,12 +1,10 @@
 <h3>Restaurants Detail</h3>
-
+<a ng-click="ctrl.showDetailTrue()">
 <img ng-src="{{ctrl.rest.image_url}}" alt="Restaurant image" style="width:304px;height:228px;">
-<div>rating: {{ctrl.rest.rating}}</div>
-<div>location: <div ng-repeat= "l in ctrl.rest.location.address">{{l}}</div>
+<div>rating: {{ctrl.rest.rating}}</div></br>
+location: <a href="http://maps.google.com/?q={{ctrl.rest.location.address[0]}},{{ctrl.rest.location.city}}, {{ctrl.rest.location.state_code}}, {{ctrl.rest.location.country_code}}, {{ctrl.rest.postal_code}}"><div ng-repeat= "l in ctrl.rest.location.address">{{l}}</div>
 {{ctrl.rest.location.city}}, {{ctrl.rest.location.state_code}}, {{ctrl.rest.location.country_code}}, {{ctrl.rest.postal_code}}
-</div>
-<div>website: {{ctrl.rest.mobile_url}}</div>
+</a></br>
+website: <a href="{{ctrl.rest.mobile_url}}">{{ctrl.rest.mobile_url}}</a>
 <div>phone: {{ctrl.rest.display_phone}}</div>
-
-
-</div>
+</a>
