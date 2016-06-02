@@ -1,14 +1,11 @@
-<h1>Welcome to the Store page</h1>
+<h1 style="background-color:#FF0066;color:pink">Welcome to the Store page</br>
+</h1>
 
 
 <!-- a button that goes to details page -->
-</br>
-<div>
+<div style="background-color:#FFCCCC">
 	<label>Location: </label><input type="text" ng-model="ctrl.location"></input>
-    <button ui-sref="{{ctrl.navStates.kStoreState}}" class="btn btn-primary" ng-click="ctrl.onAddressChange(ctrl.location)">Get!</button>
-</div>
-
-</br>
+    <button ui-sref="{{ctrl.navStates.kStoreState}}" class="btn btn-primary" style="background-color:#FF0066" ng-click="ctrl.onAddressChange(ctrl.location)">Get!</button>
 <ul>
 	<li><a ng-click="ctrl.showDetails()" ui-sref="{{ctrl.navStates.kShoesState}}">Shoes</a></li>
 	<li><a ng-click="ctrl.showDetails()" ui-sref="{{ctrl.navStates.kRestaurantsState}}">Restaurants</a></li>
@@ -16,9 +13,15 @@
 
 </br>
 <div ng-show = "{{ctrl.showList}}" ui-view="listView"
-	 style="width:20%; height: 500px; float:left; background-color: yellow;">
+	 style="width:20%; height: 500px; float:left; background-color: #FFCCCC;">
 </div>
 <div ng-show = "{{ctrl.showList}}" ui-view="detailView"
 	 style="width:80%; height: 500px; float:left; background-color: pink;">
 </div>
+</div>
+</br></br></br></br></br></br></br></br></br></br>
+<div common-footer></div>
+</br></br>
+<h5>{{ctrl.trademark}}</h5>
+
 

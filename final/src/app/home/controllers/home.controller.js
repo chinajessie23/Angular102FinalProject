@@ -17,7 +17,7 @@
 
 		self.loggedInUser = CurrentUser.getCurrentUser();
 
-		console.log(MY_VAL);
+		self.trademark = MY_VAL;
 
 		self.navStates = STATES;
 	});

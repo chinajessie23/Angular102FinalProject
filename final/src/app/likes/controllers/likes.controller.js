@@ -7,3 +7,4 @@ angular.module('MyApp.Likes')
 
 	console.log(MY_VAL);
 });
+
