@@ -1,9 +1,65 @@
 <div home-header></div>
 
 <h4>Current User: {{ctrl.loggedInUser}}</h4>
+<div logged-in-user></div>
 
-<input type="text" ng-model="ctrl.user.fname"><br/>
-<input type="text" ng-model="ctrl.user.lname">
+
+<!-- <form name="ctrl.signupForm" ng-submit="ctrl.submitSignupForm()">
+	<input type="text"
+		   ng-model="ctrl.user.fname" 
+		   placeholder="first name"
+		   name="usernameInput"
+		   required><br/>
+
+	<input type="text"
+		   ng-model="ctrl.user.lname" 
+		   placeholder="last name"
+		   name="usernameInput"
+		   required><br/>
+
+	<input type="email"
+		   ng-model="ctrl.email"
+		   placeholder="email"
+		   ng-required="ctrl.usernameRequired"><br/>
+
+	<input type="text"
+		   ng-model="ctrl.phone"
+		   placeholder="phone"
+		   ng-pattern="ctrl.phoneExp"
+		   name="phoneInput"><br/>
+			<div ng-show="ctrl.myForm.phoneInput.$invalid">Please enter in a pattern matching (###) ###-#####</div>
+	<input type="submit"
+		   value="Submit My Form"
+		   ng-disabled="ctrl.myForm.$invalid"><br/>
+
+		<select ng-model="ctrl.userState"
+				ng-options="key as value for (key, value) in ctrl.states">
+		</select><br/>
+
+		<pre>{{ ctrl.userState | json }}</pre>
+
+</form> -->
+
+<form ng-show = "ctrl.showForm" name="ctrl.loginForm" ng-submit="ctrl.submitLoginForm()">
+	<input type="text"
+		   ng-model="ctrl.user.fname" 
+		   placeholder="first name"
+		   name="usernameInput"
+		   required><br/>
+
+	<input type="text"
+		   ng-model="ctrl.user.lname" 
+		   placeholder="last name"
+		   name="usernameInput"
+		   required><br/>
+
+    <input type="submit"
+		   value="Log Me In"><br/>
+</form>
+
+    <button ng-hide = "ctrl.showForm" ng-click="ctrl.logout()"> Log out </button>
+
+
 
 <!-- a button that goes to store page -->
 </br></br></br></br></br>
