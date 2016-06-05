@@ -8,12 +8,12 @@ module.exports = function(db) {
 	app.use(bodyParser.json());
 
 	// Load in Database models
-	require('../models/todo.model');
+	require('../models/rest.model');
 
 	app.use(express.static('./dist'));
 
 	// Load in Route handlers
-	require('../routes/todo.routes')(app);
+	require('../routes/rest.routes')(app);
 	require('../routes/yelp.routes')(app);
 
 	return app;

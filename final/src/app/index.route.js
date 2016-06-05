@@ -29,19 +29,39 @@
     })
 
 
-    //Likes child-states
-    .state(STATES.kCEOState /*likes.ceo*/, {
-      url:'/ceo',
-      templateUrl: 'app/likes/partials/ceo.html',
+    //Likes child-sibling states
+    .state(STATES.kRestaurantsLikeState, {
+      views: {
+        listView: {
+          templateUrl: 'app/likes/partials/restaurantsLikeList.html',
+        },
+        detailView: {
+          templateUrl: 'app/likes/partials/restaurantsLikeDetails.html',
+        }
+      }
     })
-    .state(STATES.kPresidentState, {
-      url:'/president',
-      templateUrl: 'app/likes/partials/president.html',
+    .state(STATES.kShoesLikeState, {
+      views: {
+        listView: {
+          templateUrl: 'app/likes/partials/shoesLikeList.html',
+        },
+        detailView: {
+          templateUrl: 'app/likes/partials/shoesLikeDetails.html',
+        }
+      }
     })
-    .state(STATES.kFounderState, {
-      url:'/founder',
-      templateUrl: 'app/likes/partials/founder.html',
-    })
+    // .state(STATES.kCEOState /*likes.ceo*/, {
+    //   url:'/ceo',
+    //   templateUrl: 'app/likes/partials/ceo.html',
+    // })
+    // .state(STATES.kPresidentState, {
+    //   url:'/president',
+    //   templateUrl: 'app/likes/partials/president.html',
+    // })
+    // .state(STATES.kFounderState, {
+    //   url:'/founder',
+    //   templateUrl: 'app/likes/partials/founder.html',
+    // })
 
     // Store child-sibling states
     .state(STATES.kRestaurantsState, {
@@ -66,10 +86,11 @@
     })
 
     //Restaurant child-state
-    .state(STATES.kRestaurantDetailState, {
-      url:'/restaurant',
-      templateUrl: 'app/store/partials/restaurantsDetails.html',
-    });
+    //this is not in use yet.
+    // .state(STATES.kRestaurantDetailState, {
+    //   url:'/restaurant',
+    //   templateUrl: 'app/store/partials/restaurantsDetails.html',
+    // });
 
     $urlRouterProvider.otherwise('/');
   }

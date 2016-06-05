@@ -28,7 +28,15 @@
 
 
 
-
+    .factory('addRestResource', function($resource) {
+    var resourceObject = $resource('/api/addRest', null, {
+        addRest: {
+            method: 'PUT'
+            // isArray: true
+        }
+    });
+    return resourceObject;
+    })
 
 
 

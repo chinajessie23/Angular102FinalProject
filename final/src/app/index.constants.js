@@ -11,15 +11,14 @@
     	kLikesState: 'likes',
     	kStoreState: 'store',
 
-    	// Contacts child states
-    	kCEOState: 'likes.ceo',
-    	kPresidentState: 'likes.president',
-    	kFounderState: 'likes.founder',
+    	// Likes child states
+    	kRestaurantsLikeState: 'likes.restaurants',
+    	kShoesLikeState: 'likes.shoes',
 
     	// Store child states
         kRestaurantsState:'store.restaurants',
     	kShoesState: 'store.shoes',
-        kRestaurantDetailState:'store.restaurants.restaurant'
+        // kRestaurantDetailState:'store.restaurants.restaurant'
 
     });
 

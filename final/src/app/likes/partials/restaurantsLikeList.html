@@ -1,0 +1,5 @@
+<h3>Restaurants Liked</h3>
+<div ng-repeat="res in ctrl.rests track by $index">
+		<li><a ng-click="ctrl.onRestaurantClick(res)">{{res.name}}</a></li>
+</div>
+</br></br></br>

@@ -1,9 +1,10 @@
 angular.module('MyApp.Store')
 
-.controller('StoreController', function(MY_VAL,STATES,MainDataService) {
+.controller('StoreController', function(MY_VAL,STATES,MainDataService,addRestResource) {
 	var self = this;
 	self.navStates = STATES;
-    self.trademark = MY_VAL;
+  self.trademark = MY_VAL;
+  self.rests =[];
 
 	console.log('StoreController initialized');
 
@@ -15,7 +16,6 @@ angular.module('MyApp.Store')
                 self.restaurants = restaurants;
                 console.log(self.restaurants);
             }
-            console.log("set to flase")    
         });
     };
 
@@ -28,4 +28,20 @@ angular.module('MyApp.Store')
         self.showDetail=true;
         console.log("self.rest",self.rest);
     }
+
+    self.addRest = function(rest) {
+        var resourceObject = addRestResource;
+
+        resourceObject.addRest(
+        {name: rest.name, rating: rest.rating,website:rest.mobile_url,phone:rest.display_phone,image:rest.image_url}
+          , function onSuccess(response) {
+             // self.thisRest._id = response._id;
+            self.rests.push(response);
+            console.log("self.rests", self.rests)
+            console.log('SUCCESS: ', response)
+          }, function onError(errorMessage) {
+            console.log('ERROR: ', errorMessage)
+          })
+  };
+  
 });

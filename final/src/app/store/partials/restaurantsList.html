@@ -1,5 +1,6 @@
-<h3>Restaurants Lists</h3>
+<p><h3>Restaurants Lists</h3>
 <div ng-repeat="res in ctrl.restaurants track by $index">
-		<li><a ui-sref="{{ctrl.navStates.kRestaurantDetailState}}" ng-click="ctrl.onRestaurantClick(res)">{{res.name}}</a></li>
+		<li><a ng-click="ctrl.onRestaurantClick(res)">{{res.name}}</a></li>
 </div>
 </br></br></br>
+</p>
