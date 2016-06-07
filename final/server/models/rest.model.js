@@ -13,7 +13,8 @@ var RestSchema = new Schema({
   name: {
     type: String,
     trim: true,
-    unique: true
+    unique: true,
+    dropDups: true
       },
   phone: {
     type: String,
