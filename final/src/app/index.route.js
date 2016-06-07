@@ -27,6 +27,12 @@
       templateUrl: 'app/store/partials/store.main.html',
       controller: 'StoreController as ctrl'
     })
+    .state(STATES.kAboutState, {
+      url: '/about',
+      // template: '<h3>Hello world</h3>',
+      templateUrl: 'app/about/partials/about.main.html',
+      controller: 'AboutController as ctrl'
+    })
 
 
     //Likes child-sibling states

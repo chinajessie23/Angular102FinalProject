@@ -21,7 +21,7 @@ angular.module('MyApp.Likes')
     }
 
     self.getRests = function() {
-        var resourceObject = getRestsResource;
+      var resourceObject = getRestsResource;
     	resourceObject.getRests({
         page: 0,
         numResults: 20

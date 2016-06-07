@@ -24,12 +24,15 @@ angular.module('MyApp.Store')
     }
 
     self.onRestaurantClick= function(rest){
+        self.addedRest=false;
         self.rest = rest;
         self.showDetail=true;
         console.log("self.rest",self.rest);
     }
 
     self.addRest = function(rest) {
+        self.addedRest = true;
+
         var resourceObject = addRestResource;
 
         resourceObject.addRest(

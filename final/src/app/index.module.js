@@ -10,6 +10,7 @@
 	    'MyApp.Home',
 	    'MyApp.Likes',
 	    'MyApp.Store',
+	   	'MyApp.About',
 	    'MyApp.Common'
 	]);
 

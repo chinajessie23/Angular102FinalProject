@@ -10,6 +10,7 @@
     	kHomeState: 'home',
     	kLikesState: 'likes',
     	kStoreState: 'store',
+        kAboutState: 'about',
 
     	// Likes child states
     	kRestaurantsLikeState: 'likes.restaurants',
