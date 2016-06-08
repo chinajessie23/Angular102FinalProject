@@ -17,12 +17,6 @@
 
 		self.phoneExp = /^\(\d\d\d\) \d\d\d-\d\d\d\d$/;
 
-    	self.submitLoginForm = function() {
-    	if (self.loginForm.$valid) {
-			self.loggedInUser = self.user.fname.concat(" "+self.user.lname)
-	    	} 
-    };
-
     	self.states = {
     	NY: 'New York',
     	FL: 'Florida',

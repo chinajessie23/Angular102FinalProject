@@ -7,7 +7,7 @@
 
   /** @ngInject */
   function config(CurrentUserProvider) {
-  	CurrentUserProvider.setUser('Jiasi');
+  	CurrentUserProvider.setUser('you are not logged in');
   }
 
 })();

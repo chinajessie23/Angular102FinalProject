@@ -12,6 +12,10 @@
     	kStoreState: 'store',
         kAboutState: 'about',
 
+        kLoginState: 'home.login',
+        kSignupState: 'home.signup',
+        kManageState:'home.manage',
+
     	// Likes child states
     	kRestaurantsLikeState: 'likes.restaurants',
     	kShoesLikeState: 'likes.shoes',

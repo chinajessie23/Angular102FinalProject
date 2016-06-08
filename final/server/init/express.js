@@ -9,11 +9,14 @@ module.exports = function(db) {
 
 	// Load in Database models
 	require('../models/rest.model');
+	require('../models/user.model');
+
 
 	app.use(express.static('./dist'));
 
 	// Load in Route handlers
 	require('../routes/rest.routes')(app);
+	require('../routes/user.routes')(app);
 	require('../routes/yelp.routes')(app);
 
 	return app;

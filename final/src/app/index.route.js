@@ -56,18 +56,19 @@
         }
       }
     })
-    // .state(STATES.kCEOState /*likes.ceo*/, {
-    //   url:'/ceo',
-    //   templateUrl: 'app/likes/partials/ceo.html',
-    // })
-    // .state(STATES.kPresidentState, {
-    //   url:'/president',
-    //   templateUrl: 'app/likes/partials/president.html',
-    // })
-    // .state(STATES.kFounderState, {
-    //   url:'/founder',
-    //   templateUrl: 'app/likes/partials/founder.html',
-    // })
+
+    .state(STATES.kLoginState /*home.login*/, {
+      url:'/login',
+      templateUrl: 'app/home/partials/login.html',
+    })
+    .state(STATES.kSignupState, {
+      url:'/signup',
+      templateUrl: 'app/home/partials/signup.html',
+    })
+    .state(STATES.kManageState, {
+      url:'/manage',
+      templateUrl: 'app/home/partials/manage.html',
+    })
 
     // Store child-sibling states
     .state(STATES.kRestaurantsState, {

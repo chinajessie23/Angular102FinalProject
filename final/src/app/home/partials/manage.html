@@ -1,0 +1,198 @@
+
+<!-- MODALS -->
+
+<!-- MOBILE MENU - Option 2 -->
+<section id="navMobile" class="aside-menu left">
+    <form class="form-horizontal form-search">
+        <div class="input-group">
+            <input type="search" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
+                <button id="btnHideMobileNav" class="btn btn-close" type="button" title="Hide sidebar"><i class="fa fa-times"></i></button>
+            </span>
+        </div>
+    </form>
+    <div id="dl-menu" class="dl-menuwrapper">
+        <ul class="dl-menu"></ul>
+    </div>
+</section> 
+
+<!-- SLIDEBAR -->
+<section id="asideMenu" class="aside-menu right">
+    <form class="form-horizontal form-search">
+        <div class="input-group">
+            <input type="search" class="form-control" placeholder="Search..." />
+            <span class="input-group-btn">
+                <button id="btnHideAsideMenu" class="btn btn-close" type="button" title="Hide sidebar"><i class="fa fa-times"></i></button>
+            </span>
+        </div>
+    </form>
+    
+    <h5 class="side-section-title">Optional sidebar menu</h5>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About us</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="#">Work</a>
+            </li>
+            <li>
+                <a href="#">Online shop</a>
+            </li>
+        </ul>
+    </div>
+    
+    <h5 class="side-section-title">Social media</h5>
+    <div class="social-media">
+        <a href="#"><i class="fa fa-facebook facebook"></i></a>
+        <a href="#"><i class="fa fa-google-plus google"></i></a>
+        <a href="#"><i class="fa fa-twitter twitter"></i></a>
+    </div>
+    
+    <h5 class="side-section-title">Contact information</h5>
+    <div class="contact-info">
+        <h5>Address</h5>
+        <p>5th Avenue, New York - United States</p>
+        
+        <h5>Email</h5>
+        <p>hello@webpixels.ro</p>
+        
+        <h5>Phone</h5>
+        <p>+10 724 1234 567</p>
+    </div>
+</section>
+
+<!-- MAIN WRAPPER -->
+<div class="body-wrap">
+    <!-- This section is only for demonstration purpose only. Check out the docs for more informations" -->
+    <div id="divStyleSwitcher" class="style-switcher-slidebar">
+    <a href="#" id="cmdShowStyleSwitcher" class="open-panel hidden-xs"><i class="fa fa-cog"></i></a>
+    <div class="switch-panel">
+        <div class="panel-section">
+            <h4 class="title text-uppercase font-normal">Layout options</h4>
+
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="form-group">
+                        <label>I prefer it:</label> 
+                        <select id="cmbLayoutStyle" class="form-control">
+                            <option value="1">Fluid</option>
+                            <option value="2">Boxed</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="form-group">
+                        <label></label>
+                        <select id="cmbLayoutColor" class="form-control">
+                            <option value="1">Light</option>
+                            <option value="2">Dark</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <label class="mt-10">Predefined body backgrounds</label>
+            <span class="clearfix"></span>
+            <span id="cmbBodyBg" class="color-switch">
+                <a href="#" id="cmdBodyBg1" class="body-bg-1 ttip" data-toggle="bottom" title="Solid color"></a>
+                <a href="#" id="cmdBodyBg2" class="body-bg-2 ttip" data-toggle="bottom" title="Black Lozenge"></a>
+                <a href="#" id="cmdBodyBg3" class="body-bg-3 ttip" data-toggle="bottom" title="Squairy Light"></a>
+                <a href="#" id="cmdBodyBg4" class="body-bg-4 ttip" data-toggle="bottom" title="Dark Dotted"></a>
+                <a href="#" id="cmdBodyBg5" class="body-bg-5 ttip" data-toggle="bottom" title="Skulls"></a>
+                <a href="#" id="cmdBodyBg6" class="body-bg-6 ttip" data-toggle="bottom" title="Image Background - 1"></a>
+                <a href="#" id="cmdBodyBg7" class="body-bg-7 ttip" data-toggle="bottom" title="Image Background - 2"></a>
+                <span class="clearfix"></span>
+            </span>
+
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="form-group">
+                        <label>Section title:</label>
+                        <select id="cmbSectionTitleStyle" class="form-control">
+                            <option value="1">Style 1</option>
+                            <option value="2">Style 2</option>
+                            <option value="3">Style 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="form-group">
+                        <label>Color:</label>
+                        <select id="cmbSectionTitleColor" class="form-control" disabled="disabled">
+                            <option value="1">Base</option>
+                            <option value="2">Alt Base</option>
+                            <option value="3">Light</option>
+                            <option value="4">Dark</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>   
+
+        <hr> 
+
+        <hr>
+    </div>
+</div>
+         </div>
+
+    <section class="slice bg-white">
+        <div class="wp-section user-account">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="user-profile-img">
+                            <img src="https://pbs.twimg.com/media/BNAq6BVCcAAjmRX.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-9">                     
+                        <div class="tabs-framed">
+                            <ul class="tabs clearfix">
+                                <li class="active"><a data-toggle="tab">About me</a></li>
+                                <li><a ui-sref="{{ctrl.navStates.kLikesState}}" data-toggle="tab">My Likes</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="tab-1">
+                                    <div class="tab-body">
+                                        <dl class="dl-horizontal style-2">
+                                            <h3 class="title title-lg">Personal information</h3>
+                                            
+                                            <dt>Your first name</dt>
+                                            <dd>
+                                                <span class="pull-left">{{ctrl.user.fname}}</span>
+                                                <a href="#" class="btn btn-xs btn-base btn-icon fa-edit pull-right"><span>Edit</span></a>
+                                            </dd>
+                                            <hr>
+
+                                            <dt>Your last name</dt>
+                                            <dd>
+                                                <span class="pull-left">{{ctrl.user.lname}}</span>
+                                                <a href="#" class="btn btn-xs btn-base btn-icon fa-edit pull-right"><span>Edit</span></a>
+                                            </dd>
+                                            <hr>
+
+                                            <dt>Username</dt>
+                                            <dd>
+                                            <span class="pull-left">{{ctrl.user.username}}</span>
+                                                <a href="#" class="btn btn-xs btn-base btn-icon fa-edit pull-right"><span>Edit</span></a>
+                                            </dd>
+                                            <hr>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
