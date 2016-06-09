@@ -8,6 +8,12 @@
     	}
     })
 
+     .directive('commonHeader', function() {
+        return {
+            templateUrl: 'app/common/partials/common-header.html',
+        }
+    })
+
     //  .directive('loggedInUser', function() {
     // 	return {
     // 		templateUrl: 'app/common/partials/logged-in-user.html',

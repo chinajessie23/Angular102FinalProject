@@ -1,28 +1,23 @@
-<head>
-    <!-- Essential styles -->
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css"> 
-    <link rel="stylesheet" href="assets/fancybox/jquery.fancybox.css?v=2.1.5" media="screen"> 
-     
-    <!-- Boomerang styles -->
-        <link id="wpStylesheet" type="text/css" href="css/global-style.css" rel="stylesheet" media="screen"> 
-</head>
-<h1 style="background-color:#FF0066;color:pink">Like Lists </br>
-</h1>
+<body>
 
+<div style="background-color:#FF0066;color:pink" common-header></div>
+
+<div style="background-color:pink;color:pink">Like Lists
 <ul>
 	<li><a ng-click="ctrl.showDetails()" ui-sref="{{ctrl.navStates.kShoesLikeState}}">Shoes</a></li>
 	<li><a ng-click="ctrl.showDetails()" ui-sref="{{ctrl.navStates.kRestaurantsLikeState}}">Restaurants</a></li>
 </ul>
+</div>
+
 
 <br>
 <div ng-show = "ctrl.showList" ui-view="listView"
-	 style="width:20%; height: 1000px; float:left; background-color: yellow;">
+	 style="width:20%; height: 1000px; float:left; background-color: white;">
 </div>
 <div ng-show = "ctrl.showList" ui-view="detailView"
-	 style="width:80%; height: 1000px; float:left; background-color: pink;">
+	 style="width:80%; height: 1000px; float:left; background-color: white;">
 </div>
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-
+</body>
+<br><br><br><br><br><br><br><br><br><br><br>
 <div common-footer></div>
-
 

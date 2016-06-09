@@ -8,7 +8,7 @@
 
 	angular.module('MyApp.Home')
 
-	.controller('HomeController', function(MY_VAL, CurrentUser, STATES,addUserResource,getUserResource) {
+	.controller('HomeController', function(MY_VAL, CurrentUser, STATES,addRestResource,addUserResource,getUserResource,getRestsResource) {
 		var self = this;
 		self.name = 'George'
 		console.log('HomeController initialized');
@@ -22,7 +22,38 @@
 		self.navStates = STATES;
 
 		self.phoneExp = /^\(\d\d\d\) \d\d\d-\d\d\d\d$/;
+		getRests();
 
+		  function getRests(){
+      var resourceObject = getRestsResource;
+    	resourceObject.getRests({
+        page: 0,
+        numResults: 20
+      }, function onSuccess(response) {
+        self.rests = response;
+        console.log('SUCCESS: ', response)
+      }, function onError(errorMessage) {
+        console.log('ERROR: ', errorMessage)
+      })
+
+  };
+  self.addRest = function(rest) {
+        self.addedRest = true;
+
+        var resourceObject = addRestResource;
+
+        resourceObject.addRest(
+        {name: rest.name, rating: rest.rating,website:rest.mobile_url,phone:rest.display_phone,image:rest.image_url}
+          , function onSuccess(response) {
+             // self.thisRest._id = response._id;
+            self.rests.push(response);
+            console.log("self.rests", self.rests)
+            console.log('SUCCESS: ', response)
+          }, function onError(errorMessage) {
+            console.log('ERROR: ', errorMessage)
+          })
+  };
+  
  		self.addUser = function(user) {
         self.addedRest = true;
         self.showSignup=false;
@@ -59,7 +90,7 @@
     	resourceObject.getUser(
         {username:user.username}
       , function onSuccess(response) {
-        self.user = user;
+        self.user= user;
         console.log('SUCCESS: ', response)
       }, function onError(errorMessage) {
         console.log('ERROR: ', errorMessage)
@@ -71,12 +102,11 @@
   			getUser(user);
 			if(self.user.password == user.password){
 				self.user = user;
-				self.loggedInUser = self.user.username;
-
+				self.loggedUser = self.user;
 			}
 			else{
 				self.user=null;
-				self.loggedInUser = 'invalidate username or password';
+				self.loggedUser = 'invalidate username or password';
 			}
 			self.showLogin = false;
 	    	} 

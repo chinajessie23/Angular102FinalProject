@@ -27,7 +27,7 @@ exports.addRest = function(req, res) {
 };
 
 exports.getRests = function(req, res) {
-    RestModel.find(null, {name: 1}).exec(function(err, rests) {
+    RestModel.find(null, {name: 1,image:1}).exec(function(err, rests) {
       if (err) {
         return res.status(400).send({
           message: err
