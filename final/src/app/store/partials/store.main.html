@@ -1,16 +1,26 @@
+<style>
+.containerBig {
+    background-image: url("http://i.stack.imgur.com/jGlzr.png");
+    z-index: -1
+}
+</style>
+
+
 <head>
     <!-- Essential styles -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css"> 
     <link rel="stylesheet" href="assets/fancybox/jquery.fancybox.css?v=2.1.5" media="screen">  
 </head>
+<div class ="containerBig">
 
 <div common-header></div>
 
 <!-- a button that goes to details page -->
-<div style="background-color:pink">
-	<label>Location: </label>
+
+<div>
+	<label style="color:black">Location: </label>
 	<input type="text" ng-model="ctrl.location"></input>
-    <button ui-sref="{{ctrl.navStates.kStoreState}}" class="btn btn-primary" style="background-color:#FF0066" ng-click="ctrl.onAddressChange(ctrl.location)">Get!
+    <button ui-sref="{{ctrl.navStates.kStoreState}}" class="btn btn-primary" style="background-color:#CC6666" ng-click="ctrl.onAddressChange(ctrl.location)">Get!
     </button>
 	<ul>
 		<li><a ng-click="ctrl.showDetails()" ui-sref="{{ctrl.navStates.kShoesState}}">Shoes</a></li>
@@ -25,5 +35,6 @@
 </div>
 <br><br><br><br><br><br><br><br><br><br><br>
 <div common-footer></div>
+</div>
 
 

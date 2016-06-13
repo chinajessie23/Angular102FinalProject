@@ -1,8 +1,21 @@
+
+
+<style>
+.container1 {
+    background-image: url("http://www.trendstorevillach.at/pics/bg_slider_store02.jpg");
+    z-index: -1
+}
+.container2 {
+    background-image: url("http://sotd.us/darrinrigotti/images/background.png");
+    z-index: -1
+}
+</style>
+<div class = "container1">
 <body>
 
-<div style="background-color:#FF0066;color:pink" common-header></div>
+<div common-header></div>
 
-<div style="background-color:pink;color:pink">Like Lists
+<div class="container2" ><span style="color:black;font-weight: bold;  font-weight: 900;">Like Lists</span>
 <ul>
 	<li><a ng-click="ctrl.showDetails()" ui-sref="{{ctrl.navStates.kShoesLikeState}}">Shoes</a></li>
 	<li><a ng-click="ctrl.showDetails()" ui-sref="{{ctrl.navStates.kRestaurantsLikeState}}">Restaurants</a></li>
@@ -20,4 +33,5 @@
 </body>
 <br><br><br><br><br><br><br><br><br><br><br>
 <div common-footer></div>
+</div>
 
